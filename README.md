@@ -5,7 +5,7 @@ FREE-CAT LIVE is an instrument developed by Gonzalo Nieto Montero in the context
 
 FREE-CAT LIVE integrates a real-time [concatenative synthesizer](https://en.wikipedia.org/wiki/Concatenative_synthesis#:~:text=Concatenative%20synthesis%20is%20a%20technique,milliseconds%20up%20to%201%20second.) with [Freesound](https://freesound.org/). The idea is to be able to make text queries and download sounds via the [Freesound APIv2](https://freesound.org/docs/api/overview.html) in order to create an approximation of an input signal or a pre-recorded loop in a live situation. For example, you might use this if you wanted to be able to speak into a microphone and hear a version of your voice built from dog barks.
 
-[![Youtube Demo](https://img.youtube.com/vi/nhlqn3-BCrI/0.jpg)](https://www.youtube.com/watch?v=nhlqn3-BCrI)
+[![Youtube Demo](./.screenshots/demo_video.png)](https://www.youtube.com/watch?v=nhlqn3-BCrI)
 
 To achieve this, a Pure Data patch (based on William Brent's ```concatenative.pd```) performs the real-time concatenative synthesis using BFCC coefficients, while a python script run from the command line allows the user to make queries, and directly communicates with the Pd patch via OSC.
 
